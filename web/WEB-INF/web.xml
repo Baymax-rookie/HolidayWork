@@ -4,34 +4,34 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
-    <servlet>
-        <servlet-name>signUpServlet</servlet-name>
-        <servlet-class>Servlet.signUpServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>signUpServlet</servlet-name>
-        <url-pattern>/login</url-pattern>
-    </servlet-mapping>
-    <servlet>
-        <servlet-name>LoginServlet</servlet-name>
-        <servlet-class>Servlet.LoginServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>LoginServlet</servlet-name>
-        <url-pattern>/signUp</url-pattern>
-    </servlet-mapping>
-    <filter>
-        <filter-name>characterEncodingFilter</filter-name>
-        <filter-class>Servlet.FilterServlet</filter-class>
-        <init-param>
-            <param-name>encode</param-name>
-            <param-value>UTF-8</param-value>
-        </init-param>
+    <!--<servlet>-->
+        <!--<servlet-name>signUpServlet</servlet-name>-->
+        <!--<servlet-class>Servlet.signUpServlet</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>signUpServlet</servlet-name>-->
+        <!--<url-pattern>/login</url-pattern>-->
+    <!--</servlet-mapping>-->
+    <!--<servlet>-->
+        <!--<servlet-name>LoginServlet</servlet-name>-->
+        <!--<servlet-class>Servlet.LoginServlet</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>LoginServlet</servlet-name>-->
+        <!--<url-pattern>/signUp</url-pattern>-->
+    <!--</servlet-mapping>-->
+    <!--<filter>-->
+        <!--<filter-name>characterEncodingFilter</filter-name>-->
+        <!--<filter-class>Servlet.FilterServlet</filter-class>-->
+        <!--<init-param>-->
+            <!--<param-name>encode</param-name>-->
+            <!--<param-value>UTF-8</param-value>-->
+        <!--</init-param>-->
 
-    </filter>
-    <filter-mapping>
-        <filter-name>characterEncodingFilter</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+        <!--<filter-name>characterEncodingFilter</filter-name>-->
+        <!--<url-pattern>/*</url-pattern>-->
+    <!--</filter-mapping>-->
 
 </web-app>

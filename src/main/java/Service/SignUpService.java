@@ -20,7 +20,7 @@ public class SignUpService {
         try {
             conn= JDBCUtil.getConnection();
             stmt=conn.createStatement();
-            rs=stmt.executeQuery("select * from table where user=? and password =?");
+            rs=stmt.executeQuery("select * from user where username=? and password =?");
             if (rs.getString(1).equals(username)){
                 return false;
             }else {

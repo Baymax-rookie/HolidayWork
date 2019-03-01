@@ -3,7 +3,9 @@ package Servlet;
 import Been.Message;
 import Service.MessageService;
 
+import javax.jws.WebService;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,7 +14,7 @@ import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.util.List;
 
-
+@WebServlet("/info")
 public class InfoServlet extends HttpServlet {
     private static MessageService messageService;
 

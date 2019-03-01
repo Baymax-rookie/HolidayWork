@@ -29,11 +29,13 @@ public class MessageDao {
         ResultSet rs=null;
         try {
         conn=JDBCUtil.getConnection();
-        stmt = conn.prepareStatement("insert into message (username,text,pid) values(?,?,?)");
+        stmt = conn.prepareStatement("insert into message (username,id,pid,text) values(?,?,?,?)");
 
             ((PreparedStatement)stmt).setString(1,message.getUsername());
-            ((PreparedStatement)stmt).setString(2,message.getText());
+            ((PreparedStatement)stmt).setString(2,message.getUsername());
             ((PreparedStatement)stmt).setInt(3,message.getPid());
+            ((PreparedStatement)stmt).setString(4,message.getText());
+
             ((PreparedStatement) stmt).execute();
         } catch (SQLException e) {
         e.printStackTrace();

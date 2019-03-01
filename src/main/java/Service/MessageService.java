@@ -85,7 +85,7 @@ public class MessageService {
         if(messageInfo == null){
             return;
         }
-        List<Message> list = new ArrayList<>();
+        List<Message> list = new ArrayList<Message>();
         list = findAllContentChild(messageInfo);
         for (Message message: list) {
             deleteMessage(message.getId());

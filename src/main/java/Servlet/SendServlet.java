@@ -4,6 +4,7 @@ import Been.Message;
 import Service.MessageService;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,6 +13,7 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 
+@WebServlet("/send")
 public class SendServlet extends HttpServlet {
     private static final String ERROR = "{\"status\":\"10001\"}";
 
